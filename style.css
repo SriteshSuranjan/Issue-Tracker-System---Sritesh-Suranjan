@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease;
+    background-color: #f8f8f8;
+    /* Light Gray Background */
+    color: #333;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-container input,
+.input-container textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.input-container button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+    background-color: #45a049;
+}
+
+.issues {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.issue {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+.issue:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.issue-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.issue-body {
+    margin-bottom: 20px;
+}
+
+.issue-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theme-switch {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.theme-switch:hover {
+    background-color: #2980b9;
+}
+
+
+/* Dark Theme Styles */
+
+body.dark-theme {
+    background-color: #333;
+    /* Dark Gray Background */
+    color: #fff;
+}
+
+.container.dark-theme {
+    background-color: #444;
+    /* Darker Gray Container */
+}
+
+.input-container input,
+.input-container textarea {
+    border-color: #555;
+    /* Darker Gray Border */
+}
